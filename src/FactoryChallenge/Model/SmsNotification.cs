@@ -1,0 +1,13 @@
+﻿namespace FactoryChallenge.Model;
+
+public class SmsNotification
+{
+    public string? PhoneNumber { get; set; }
+    public string? Message { get; set; }
+
+    public void Send()
+    {
+        Console.WriteLine($"📱 Enviando SMS para {PhoneNumber}");
+        Console.WriteLine($"   Mensagem: {Message}");
+    }
+}
